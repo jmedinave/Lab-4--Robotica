@@ -23,3 +23,7 @@
     <li>Imagen perspectiva de la posici&oacute;n actual del manipulador con la &uacute;ltima posici&oacute;n enviada.</li>
     <li>Opci&oacute;n para seleccionar 1 de las 5 poses y enviarlas al manipulador.</li>
 </ul>
+ 
+ A continuación, se realiza una descripción a detalle de cada uno de los modulos tratados en el laboratorio:
+ 
+ ### Cinematica directa con Peter Corke Robotics ToolBox.
