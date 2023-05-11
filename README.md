@@ -11,3 +11,9 @@
 
 
 <p>Por otro lado, realizar el desarrollo de una interfaz gr&aacute;fica (HMI) que opere las diferentes poses que el robot va a adoptar con los siguientes requerimientos:</p>
+  
+<ul>
+    <li>Nombres, logos y datos de los integrantes del grupo.</li>
+    <li>Imagen perspectiva de la posici&oacute;n actual del manipulador con la &uacute;ltima posici&oacute;n enviada.</li>
+    <li>Opci&oacute;n para seleccionar 1 de las 5 poses y enviarlas al manipulador.</li>
+</ul>
