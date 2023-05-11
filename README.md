@@ -1,6 +1,6 @@
 # Lab-4--Robotica
 
-<p><strong><span style="font-size: 24px;">Introducci&oacute;n:</span></strong></p>
+### Introducción:
 <p><span style="font-size: 16px;">En este Laboratorio, se busca cumplir con los objetivos planteados de la gu&iacute;a de laboratorio No&deg; 4, el cual, se fundamente en la robotica de desarrollo usando ROS y el robot Phantom X (Pincher)
 
 ![phantom x](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/429be8d6-74e6-4678-9220-b16d22270292)
