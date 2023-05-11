@@ -5,7 +5,7 @@
 
 ![phantom x](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/429be8d6-74e6-4678-9220-b16d22270292)
   
- <p>El objetivo principal es realizar todo el c&oacute;digo necesario y pertinente para que el robot adopte las posturas planteadas en la gu&iacute;a las cuales son:</p>
+ <p>El objetivo principal es realizar todo el c&oacute;digo necesario y pertinente para que el robot adopte las posturas planteadas en la gu&iacute;a las cuales son:
 ![posturas](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/aa0a105d-ddba-4ed7-aef4-ffd53b464cfc)
 
 
