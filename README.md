@@ -1,5 +1,9 @@
 # Lab-4--Robotica
 
+### Integrantes:
+- Julian Felipe Medina Veira <jmedinave@unal.edu.co>
+- Santiago Andres Gomez Pena <sagomezpe@unal.edu.co>
+- Santiago Dleon Sanchez Romero <ssanchezro@unal.edu.co>
 ### Introducción:
 <p><span style="font-size: 16px;">En este Laboratorio, se busca cumplir con los objetivos planteados de la gu&iacute;a de laboratorio No&deg; 4, el cual, se fundamente en la robotica de desarrollo usando ROS y el robot Phantom X (Pincher).
 
