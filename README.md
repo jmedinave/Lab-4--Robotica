@@ -27,3 +27,8 @@
  A continuación, se realiza una descripción a detalle de cada uno de los modulos tratados en el laboratorio:
  
  ### Cinematica directa con Peter Corke Robotics ToolBox.
+ ### comunicación en ROS:
+ ### Interfaz HMI:
+ ### Conclusiones:
+ 
+ 
