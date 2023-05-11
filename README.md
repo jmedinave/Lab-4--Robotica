@@ -10,4 +10,4 @@
 ![posturas](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/c2d21864-69ab-47b0-ad7c-e501a49cf57d)
 
 
-<p>Por otro lado, realizar el desarrollo de una interfaz gr&aacute;fica (HMI) que opere las diferentes poses que el robot va a adoptar.</p>
+<p>Por otro lado, realizar el desarrollo de una interfaz gr&aacute;fica (HMI) que opere las diferentes poses que el robot va a adoptar con los siguientes requerimientos:</p>
