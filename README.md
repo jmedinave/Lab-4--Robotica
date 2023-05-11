@@ -27,8 +27,10 @@
  A continuación, se realiza una descripción a detalle de cada uno de los modulos tratados en el laboratorio:
  
  ### Cinematica directa con Peter Corke Robotics ToolBox.
- En este apartado, se realiza una descripción del primer paso que se realizó en el desarrollo de la guia, se buscó corroborar la cinematica directa en el ToolBox petercorke en Matlab, para ello, se desarrollo desde el inicio la interfaz HMI desde un inicio en matlab implementando al mismo tiempo la representación grafica del robot en petercorke. Usando el siguiente codigo para la interfaz se obtiene el siguiente resultado:
- 
+ En este apartado, se realiza una descripción del primer paso que se realizó en el desarrollo de la guia, se buscó corroborar la cinematica directa en el ToolBox petercorke en Matlab, para ello, se desarrollo desde el inicio la interfaz HMI desde un inicio en matlab implementando al mismo tiempo la representación grafica del robot en petercorke. Este codigo es adjuntado a este entrega con el nombre Interfaz1.m y obteniendo los siguientes resultados:
+
+![interfaz1](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/9e17159b-bc06-4343-9dbb-d7f9b25730fb)
+
  
  
  
