@@ -2,11 +2,11 @@
 
 ### Introducción:
 <p><span style="font-size: 16px;">En este Laboratorio, se busca cumplir con los objetivos planteados de la gu&iacute;a de laboratorio No&deg; 4, el cual, se fundamente en la robotica de desarrollo usando ROS y el robot Phantom X (Pincher).
-<p><center>
+
 ![phantom x](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/429be8d6-74e6-4678-9220-b16d22270292)                   
 ![image](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/db5b3025-32a1-4bb7-918f-5f6461aff75a)
 
-</center></p>  
+
  <p>El objetivo principal es realizar todo el c&oacute;digo necesario y pertinente para que el robot adopte las posturas planteadas en la gu&iacute;a las cuales son:</p>
 
 ![posturas](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/c2d21864-69ab-47b0-ad7c-e501a49cf57d)
