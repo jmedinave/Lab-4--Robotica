@@ -34,8 +34,16 @@
  
  
  
- ### comunicación en ROS:
+ ### Comunicación en ROS:
+ 
+ En la carpeta de catkin se añadio el repositorio incluido en la guia el cual se conoce como dynamixel one motor el cual contiene toda la configuracion necesaria para la comunicacion entre el pc y el robot pincher, considerando que resulto necesario modificar el archivo .yaml debibo a que solo consideraba el motor 1 con el nombre joint 1, de manera que se añadieron los otros cuatro motores al mismo archivo, de manera que al cargar el nodo desde el terminal de ubuntu con el comando roslaunch dynamixel_one_motor one_controller.launch, se generara el nodo de ROS que contiene los valores de los 5 motores y que permite el envio de valores de angulo a cada uno de sus motores.
+ 
+ Desde python se utilizo el atributo de Joint Trayectory para enviar los valores articulares y se inicio el nodo propio desde python para las comunicaciones con el robot, para cada pose se verificaba los nombres y la correcta configuracion en tiempo entre el pc y el robot, con ello se enviaba una rutina en donde se añadia un punto con los valores articulares en radianes, se le indicaba al robot el tiempo de movimiento, se realizaba el desplazamiento mediante el publisher y finalmente se limpiaba el arreglo que contenia los puntos y se dejaba un reposo al robot para evitar problemas.
+ 
  ### Interfaz HMI:
+ 
+ Para la interfaz se utilizo la libreria tkinter, se crearon 5 botones los cuales llevaban el robot a una posicion especifica mediante los valores articulares especificos, para facilitar la visualizacion del robot se añadieron imagenes de matlab que correspondian a la pose que el robot debia alcanzar luego de presionar el boton correspondiente, las imagenes estaban precargadas y se añadian a la ventana mediante el metodo canvas, asegurando un dimensionamiento correcto tanto de las imagenes como del canvas para evitar errores de visualizacion
+ 
  ### Conclusiones:
  + La coherencia entre los resultados en los modelos virtuales de modelación y las poses qye describen el robot depende indispensablemente de la correcta obtención de parametros DHstd asociados al robot fisico.
 + Los movimientos entre una configuracion y otra pueden ser demasiado bruscos si no se modifican los limites de corriente de los motores, es por esto que es importante encontrar unos valores apropiados que permitan realizar el movimiento a una velocidad mas baja o fijar adecuadamente el robot al suelo.
