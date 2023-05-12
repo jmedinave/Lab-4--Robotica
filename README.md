@@ -37,5 +37,8 @@
  ### comunicación en ROS:
  ### Interfaz HMI:
  ### Conclusiones:
+ + La coherencia entre los resultados en los modelos virtuales de modelación y las poses qye describen el robot depende indispensablemente de la correcta obtención de parametros DHstd asociados al robot fisico.
++ Los movimientos entre una configuracion y otra pueden ser demasiado bruscos si no se modifican los limites de corriente de los motores, es por esto que es importante encontrar unos valores apropiados que permitan realizar el movimiento a una velocidad mas baja o fijar adecuadamente el robot al suelo.
++ La conexion con ROS (y por ende con el robot) sera igual sin importar si se estan enviando mensajes desde python o desde Matlab, sin embargo, python hace el proceso mucho mas sencillo.
  
  
