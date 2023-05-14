@@ -63,6 +63,8 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
 ##### Pose 5:
  ![pose 5](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/a9b82896-9479-449e-9590-8089462d7f68)
 ![pose 5 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/3491cff7-c2e5-4a96-b6b7-a639c8071241)
+ 
+ 
 
  ### Interfaz HMI:
  
