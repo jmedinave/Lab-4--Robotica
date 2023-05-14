@@ -65,8 +65,8 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
  ![pose 5](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/a9b82896-9479-449e-9590-8089462d7f68)
 ![pose 5 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/3491cff7-c2e5-4a96-b6b7-a639c8071241)
  
-[![](https://markdown-videos.deta.dev/youtube/3uMQeB1Hfzg)] https://www.youtube.com/watch?v=3uMQeB1Hfzg)](https://youtu.be/3uMQeB1Hfzg)
- 
+
+ [![](https://markdown-videos.deta.dev/youtube/3uMQeB1Hfzg)](https://youtu.be/3uMQeB1Hfzg)
 
  ### Interfaz HMI:
  
