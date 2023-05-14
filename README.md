@@ -44,9 +44,21 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
  
  Desde python se utilizo el atributo de Joint Trayectory para enviar los valores articulares y se inicio el nodo propio desde python para las comunicaciones con el robot, para cada pose se verificaba los nombres y la correcta configuracion en tiempo entre el pc y el robot, con ello se enviaba una rutina en donde se añadia un punto con los valores articulares en radianes, se le indicaba al robot el tiempo de movimiento, se realizaba el desplazamiento mediante el publisher y finalmente se limpiaba el arreglo que contenia los puntos y se dejaba un reposo al robot para evitar problemas.
  
+##### Pose 1:
+ 
+##### Pose 2:
+ 
+##### Pose 3:
+ 
+##### Pose 4:
+ 
+##### Pose 5:
+ 
  ### Interfaz HMI:
  
  Para la interfaz se utilizo la libreria tkinter, se crearon 5 botones los cuales llevaban el robot a una posicion especifica mediante los valores articulares especificos, para facilitar la visualizacion del robot se añadieron imagenes de matlab que correspondian a la pose que el robot debia alcanzar luego de presionar el boton correspondiente, las imagenes estaban precargadas y se añadian a la ventana mediante el metodo canvas, asegurando un dimensionamiento correcto tanto de las imagenes como del canvas para evitar errores de visualizacion
+ 
+ 
  
  ### Conclusiones:
  + La coherencia entre los resultados en los modelos virtuales de modelación y las poses que describen el robot depende indispensablemente de la correcta obtención de parametros DHstd asociados al robot fisico.
