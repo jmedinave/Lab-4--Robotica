@@ -32,6 +32,7 @@ Realizamos el diagrama cinemático para obtener la tabla de parametros
 ![D cinematico](https://github.com/jmedinave/Lab-4--Robotica/blob/main/diagrama.jpg)
  
 Adicionalmente en este apartado, se realiza una descripción del primer paso que se realizó en el desarrollo de la guia, se buscó corroborar la cinematica directa en el ToolBox petercorke en Matlab, para ello, se desarrolla la interfaz HMI desde un inicio en matlab implementando al mismo tiempo la representación grafica del robot en petercorke. Este codigo es adjuntado a este entrega con el nombre Interfaz1.m y obteniendo los siguientes resultados:
+[![](https://markdown-videos.deta.dev/youtube/NarBox1LkYc)]()
 
 ![interfaz1](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/9e17159b-bc06-4343-9dbb-d7f9b25730fb)
 
@@ -64,7 +65,7 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
  ![pose 5](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/a9b82896-9479-449e-9590-8089462d7f68)
 ![pose 5 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/3491cff7-c2e5-4a96-b6b7-a639c8071241)
  
- [![](https://markdown-videos.deta.dev/youtube/NarBox1LkYc)](https://www.youtube.com/watch?v=3uMQeB1Hfzg)
+ [![](https://markdown-videos.deta.dev/youtube/NarBox1LkYc)]([https://www.youtube.com/watch?v=3uMQeB1Hfzg](https://www.youtube.com/watch?v=3uMQeB1Hfzg))
  
 
  ### Interfaz HMI:
