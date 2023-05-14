@@ -1,0 +1,164 @@
+
+#Codigo que crea un nodo que se comunica con ROS y que modifica los valores articulares qi de los ejes para cambiar su posición en cinematica directa
+
+import rospy
+from std_msgs.msg import String
+from sensor_msgs.msg import JointState
+from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
+import tkinter as tk
+from tkinter import ttk
+from PIL import Image, ImageTk
+import numpy as np
+from roboticstoolbox import Link, SerialLink
+import matplotlib.pyplot as plt
+
+# crear un objeto JointTrajectory, que envia los valores articulares
+state = JointTrajectory()
+
+# configurar los nombres de las articulaciones
+state.joint_names = ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5"]
+
+#Si fue iniciado con seguridad, se genera el nodo joint_publisher que envia coordenadas y se entra en el bucle
+
+def joint_publisher():
+    pub = rospy.Publisher('/joint_trajectory', JointTrajectory, queue_size=0)
+    rospy.init_node('joint_publisher', anonymous=False)
+
+    def move_robot(j1, j2, j3, j4, j5):
+        # configurar el tiempo de estampa, asegura igual tiempo entre robot y pc para un correcto movimiento
+        state.header.stamp = rospy.Time.now()
+
+        # configurar la posición de las articulaciones
+        point = JointTrajectoryPoint()  #Crea un punto
+        point.positions = [j1, j2, j3, j4, j5]  #Da las posiciones del punto
+
+        # configurar la duración del movimiento
+        point.time_from_start = rospy.Duration(1)
+
+        # agregar el punto a la lista de puntos, se pueden añadir varios antes de generar la rutina de movimiento
+        state.points.append(point)
+
+        # publicar el mensaje, de manera que el robot recorre el conjunto de puntos
+        pub.publish(state)
+        
+        # limpiar la lista de puntos
+        state.points.clear()
+
+        # esperar 5 segundos
+        rospy.sleep(5)
+
+    #El valor asignado a los jx corresponde al angulo de las articulaciones, para goal position equivale a 511
+    def pose1():
+        move_robot(0, 0, 0, 0, 0) #Radianes
+        
+    def pose2():
+        move_robot(-0.4363, 0.2618, -0.3491, 0.3491, 0.26)
+        
+    def pose3():
+        move_robot(0.6109, -0.6109, 0.5236, -0.5236, 0.52)
+        
+    def pose4():
+        move_robot(-1.4835, 0.3491, -0.9599, 0.2967, -0.26)
+        
+    def pose5():
+        move_robot(-1.3963, 0.6109, -0.9599, 0.7854, -0.52)
+
+    #Abre la gestion de tkinter
+    root = tk.Tk()
+
+    root.config(width=1150, height=1050)
+    root.title("Poses")
+    boton1 = ttk.Button(text="Pose 1", command=pose1)
+    boton1.place(x=150, y=50)
+    boton2 = ttk.Button(text="Pose 2", command=pose2)
+    boton2.place(x=500, y=50)
+    boton3 = ttk.Button(text="Pose 3", command=pose3)
+    boton3.place(x=850, y=50)
+    boton4 = ttk.Button(text="Pose 4", command=pose4)
+    boton4.place(x=400, y=430)
+    boton5 = ttk.Button(text="Pose 5", command=pose5)
+    boton5.place(x=750, y=430)
+
+    img1 = Image.open("/home/andrago/Descargas/Imagenes/pose 1 matlab.png")
+    img1 = img1.resize((300, 300), Image.ANTIALIAS) # ajustar el tamaño
+    img1_tk = ImageTk.PhotoImage(img1)
+
+    img2 = Image.open("/home/andrago/Descargas/Imagenes/pose 2 matlab.png")
+    img2 = img2.resize((300, 300), Image.ANTIALIAS) # ajustar el tamaño
+    img2_tk = ImageTk.PhotoImage(img2)
+
+    img3 = Image.open("/home/andrago/Descargas/Imagenes/pose 3 matlab.png")
+    img3 = img3.resize((300, 300), Image.ANTIALIAS) # ajustar el tamaño
+    img3_tk = ImageTk.PhotoImage(img3)
+
+    img4 = Image.open("/home/andrago/Descargas/Imagenes/pose 4 matlab.png")
+    img4 = img4.resize((300, 300), Image.ANTIALIAS) # ajustar el tamaño
+    img4_tk = ImageTk.PhotoImage(img4)
+
+    img5 = Image.open("/home/andrago/Descargas/Imagenes/pose 5 matlab.png")
+    img5 = img5.resize((300, 300), Image.ANTIALIAS) # ajustar el tamaño
+    img5_tk = ImageTk.PhotoImage(img5)
+
+    img6 = Image.open("/home/andrago/Descargas/Imagenes/logo.png")
+    img6 = img6.resize((400, 200), Image.ANTIALIAS) # ajustar el tamaño
+    img6_tk = ImageTk.PhotoImage(img6) 
+
+    img7 = Image.open("/home/andrago/Descargas/Imagenes/nombres.png")
+    img7 = img7.resize((500, 150), Image.ANTIALIAS) # ajustar el tamaño
+    img7_tk = ImageTk.PhotoImage(img7)     
+
+    # mostrar las imágenes en etiquetas de tkinter
+
+    canvas1 = tk.Canvas(root, width=300, height=300)
+    canvas1.pack()
+
+    canvas1.create_image(0, 0, anchor=tk.NW, image=img1_tk)
+    canvas1.place(x=50, y=100)
+
+    canvas2 = tk.Canvas(root, width=300, height=300)
+    canvas2.pack()
+
+    canvas2.create_image(0, 0, anchor=tk.NW, image=img2_tk)
+    canvas2.place(x=400, y=100)    
+
+    canvas3 = tk.Canvas(root, width=300, height=300)
+    canvas3.pack()
+
+    canvas3.create_image(0, 0, anchor=tk.NW, image=img3_tk)
+    canvas3.place(x=750, y=100)   
+
+    canvas4 = tk.Canvas(root, width=300, height=300)
+    canvas4.pack()
+
+    canvas4.create_image(0, 0, anchor=tk.NW, image=img4_tk)
+    canvas4.place(x=300, y=480)   
+
+    canvas5 = tk.Canvas(root, width=300, height=300)
+    canvas5.pack()
+
+    canvas5.create_image(0, 0, anchor=tk.NW, image=img5_tk)
+    canvas5.place(x=650, y=480)
+
+    canvas6 = tk.Canvas(root, width=400, height=200)
+    canvas6.pack()
+
+    canvas6.create_image(0, 0, anchor=tk.NW, image=img6_tk)
+    canvas6.place(x=700, y=800)     
+
+    canvas7 = tk.Canvas(root, width=500, height=150)
+    canvas7.pack()
+
+    canvas7.create_image(0, 0, anchor=tk.NW, image=img7_tk)
+    canvas7.place(x=50, y=830)      
+
+    root.mainloop()
+
+    #El nodo se queda esperando a recibir mensajes
+    while not rospy.is_shutdown():
+        rospy.spin()
+
+if __name__ == '__main__':
+    try:
+        joint_publisher()
+    except rospy.ROSInterruptException:
+        pass
