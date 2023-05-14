@@ -52,5 +52,7 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
  + La coherencia entre los resultados en los modelos virtuales de modelación y las poses que describen el robot depende indispensablemente de la correcta obtención de parametros DHstd asociados al robot fisico.
 + Los movimientos entre una configuracion y otra pueden ser demasiado bruscos si no se modifican los limites de corriente de los motores, es por esto que es importante encontrar unos valores apropiados que permitan realizar el movimiento a una velocidad mas baja o fijar adecuadamente el robot al suelo.
 + La conexion con ROS (y por ende con el robot) sera igual sin importar si se estan enviando mensajes desde python o desde Matlab, sin embargo, python hace el proceso mucho mas sencillo.
++ El uso de ROS para controlar robots nos permite implementar procesos complejos sin un conocimiento profundo del funcionamiento técnico de los equipos utilizados, aprovechando los programas que los fabricantes o la comunidad comparten abiertamente, esto permite a equipos pequeños construir y operar sistemas robóticos complejos. en breve.
++ El brazo robótico Dynamixel Phantom permite a los estudiantes experimentar físicamente con sistemas complejos sin los riesgos de la maquinaria industrial, pero con la complejidad necesaria para generar confianza para explorar y aprender sobre la maquinaria robótica industrial.
  
  
