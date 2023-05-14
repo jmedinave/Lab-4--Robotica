@@ -45,15 +45,25 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
  Desde python se utilizo el atributo de Joint Trayectory para enviar los valores articulares y se inicio el nodo propio desde python para las comunicaciones con el robot, para cada pose se verificaba los nombres y la correcta configuracion en tiempo entre el pc y el robot, con ello se enviaba una rutina en donde se añadia un punto con los valores articulares en radianes, se le indicaba al robot el tiempo de movimiento, se realizaba el desplazamiento mediante el publisher y finalmente se limpiaba el arreglo que contenia los puntos y se dejaba un reposo al robot para evitar problemas.
  
 ##### Pose 1:
- 
+ ![pose 1](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/82049664-4090-4962-95d2-e13992ede020)
+![pose 1 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/53d26a42-e989-4e0d-8ea2-88650c64a0a8)
+
 ##### Pose 2:
- 
+ ![pose 2](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/cf9a58d5-c491-4f65-8066-784322de5944)
+![pose 2 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/dd9f7a86-6e49-4781-b367-fef16b32c741)
+
 ##### Pose 3:
- 
+ ![pose 3](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/a952b730-5c35-4bda-90e4-b98474c2e381)
+![pose 3 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/979dad87-8bec-416a-a06a-b4336e4f3f9c)
+
 ##### Pose 4:
- 
+ ![pose 4](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/e59fb78f-3db0-4165-91d2-f18313052a9d)
+![pose 4 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/7c364231-2c47-4c24-853e-a5ac2a9f201e)
+
 ##### Pose 5:
- 
+ ![pose 5](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/a9b82896-9479-449e-9590-8089462d7f68)
+![pose 5 matlab](https://github.com/jmedinave/Lab-4--Robotica/assets/49196705/3491cff7-c2e5-4a96-b6b7-a639c8071241)
+
  ### Interfaz HMI:
  
  Para la interfaz se utilizo la libreria tkinter, se crearon 5 botones los cuales llevaban el robot a una posicion especifica mediante los valores articulares especificos, para facilitar la visualizacion del robot se añadieron imagenes de matlab que correspondian a la pose que el robot debia alcanzar luego de presionar el boton correspondiente, las imagenes estaban precargadas y se añadian a la ventana mediante el metodo canvas, asegurando un dimensionamiento correcto tanto de las imagenes como del canvas para evitar errores de visualizacion
