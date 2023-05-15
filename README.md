@@ -71,7 +71,7 @@ Adicionalmente en este apartado, se realiza una descripción del primer paso que
  
  Para la interfaz se utilizo la libreria tkinter, se crearon 5 botones los cuales llevaban el robot a una posicion especifica mediante los valores articulares especificos, para facilitar la visualizacion del robot se añadieron imagenes de matlab que correspondian a la pose que el robot debia alcanzar luego de presionar el boton correspondiente, las imagenes estaban precargadas y se añadian a la ventana mediante el metodo canvas, asegurando un dimensionamiento correcto tanto de las imagenes como del canvas para evitar errores de visualizacion
  
- ![HMI](https://github.com/jmedinave/Lab-4--Robotica/blob/main/HMI.png)
+ ![HMI](https://github.com/jmedinave/Lab-4--Robotica/blob/main/hmi.png)
  
  
  ### Conclusiones:
